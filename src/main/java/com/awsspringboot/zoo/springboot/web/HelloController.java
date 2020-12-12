@@ -1,7 +1,6 @@
 package com.awsspringboot.zoo.springboot.web;
 
 import com.awsspringboot.zoo.springboot.web.dto.HelloResponseDto;
-import jdk.nashorn.internal.objects.annotations.Constructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
