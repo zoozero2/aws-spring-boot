@@ -1,5 +1,6 @@
 package com.awsspringboot.zoo.springboot.domain.posts;
 
+import com.awsspringboot.zoo.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity  // 테이블과 링크될 클래스
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 생성규칙, IDENTITY 옵션 지정되어야 auto increment 됨
